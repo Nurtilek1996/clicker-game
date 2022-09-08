@@ -27,7 +27,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-   
+   position: relative;
 }
 .app-footer{
     padding: 20px;
@@ -49,6 +49,7 @@ body{
     border: 1px solid orange;
 }
 .game-field{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,7 +69,17 @@ body{
     border: none;
     border-radius: 10px;
     color: #fff;
+    z-index: 1;
 }
 .btn:hover{
     box-shadow: 0 2px 4px 1px gray;
+}
+.hide{
+    display: none;
+}
+.btn:disabled{
+    background: #ccc;
+    border: 1px solid #ccc;
+    color: #000;
+    cursor: not-allowed;
 }
